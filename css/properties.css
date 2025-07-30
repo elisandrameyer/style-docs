@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TikTok Sans", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9b7c8f;
+    color: #EBECF1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    height: auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.header .header-items {
+    display: flex;
+    gap: 30px;
+    padding-right: 5px;
+}
+
+.header-items a {
+    color: #EBECF1;
+    text-decoration: none;
+    transition: color 100ms;
+}
+
+.header-items a:hover,
+.header-items a:focus {
+    transform: translateY(-1px);
+}
+
+.header .logo {
+    padding: 10px;
+}
