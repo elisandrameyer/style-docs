@@ -37,3 +37,49 @@ body {
 .header .logo {
     padding: 10px;
 }
+
+.page-title{
+    padding-left: 4rem;
+    font-size: 35px;
+    color: #252422;
+}
+
+.page-description{
+    padding-left: 4rem;
+    /* padding-bottom: 20px; */
+    color: #252422;
+}
+
+.properties{
+    box-sizing: border-box;
+    width: 80%;
+    float: left;
+    padding: 20px;
+}
+
+.content .summary{
+    box-sizing: border-box;
+    width: 20%;
+    float: right;
+    position: fixed;
+    right: 0;
+    background-color: #ADDCC1;
+    border-radius: 8px;
+    padding: 20px;
+    align-items: center;
+}
+
+.property{
+    background-color: #ADDCC1;
+    border-radius: 8px;
+    padding: 20px;
+    color: #000000;
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
