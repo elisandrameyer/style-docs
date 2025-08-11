@@ -1,126 +1,136 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "TikTok Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TikTok Sans", sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #9b7c8f;
-    color: #EBECF1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
-    height: auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9b7c8f;
+  color: #ebecf1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  height: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .header .header-items {
-    display: flex;
-    gap: 30px;
-    padding-right: 5px;
+  display: flex;
+  gap: 30px;
+  padding-right: 5px;
 }
 
 .header-items a {
-    color: #EBECF1;
-    text-decoration: none;
-    transition: color 100ms;
+  color: #ebecf1;
+  text-decoration: none;
+  transition: color 100ms;
 }
 
 .header-items a:hover,
 .header-items a:focus {
-    transform: translateY(-1px);
+  transform: translateY(-1px);
 }
 
 .header .logo {
-    padding: 10px;
+  padding: 10px;
 }
 
 .start {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .start .title {
-    padding-left: 4rem;
-    font-size: 35px;
-    color: #252422;
+  padding-left: 4rem;
+  font-size: 35px;
+  color: #252422;
 }
 
 .start .subtitle {
-    padding-left: 4rem;
-    padding-bottom: 20px;
-    color: #252422;
+  padding-left: 4rem;
+  padding-bottom: 20px;
+  color: #252422;
 }
 
 .start .start-button {
-    background-color: #9b7c8f;
-    border-radius: 8px;
-    border-style: none;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    height: 40px;
-    width: 6rem;
-    margin-left: 4rem;
-    padding: 10px 16px;
-    text-decoration: none;
-    transition: color 100ms;
-    touch-action: manipulation;
+  background-color: #9b7c8f;
+  border-radius: 8px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  width: 6rem;
+  margin-left: 4rem;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: color 100ms;
+  touch-action: manipulation;
 }
 
 .start-button:hover,
 .start-button:focus {
-    background-color: #d49cbf;
-    transform: translateY(-1px);
+  background-color: #d49cbf;
+  transform: translateY(-1px);
 }
 
 .topics .title-topics {
-    padding-left: 4rem;
-    color: #252422;
+  padding-left: 4rem;
+  color: #252422;
+  text-decoration: none;
 }
 
 .topics .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-    color: #252422;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  color: #252422;
+  text-decoration: none;
 }
 
 .topics .card {
-    padding: 1rem;
-    /* border: #89B68C solid 1px; */
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: 0.5s;
-    cursor: pointer;
-    width: 20rem;
+  padding: 1rem;
+  /* border: #89B68C solid 1px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 20rem;
+  text-decoration: none;
 
-    img {
-        display: flex;
-        justify-content: center;
-        width: 15rem;
-        margin-left: 45px;
-    }
+  img {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    margin-left: 45px;
+    text-decoration: none;
+  }
+}
 
+.topics .card a {
+  text-decoration: none;
+  color: #252422;
 }
 
 .card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0px 10px 10px rgb(187, 166, 166);
+  transform: translateY(-7px);
+  box-shadow: 0px 10px 10px rgb(187, 166, 166);
+  text-decoration: none;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
 }
 
 .footer .span-footer {
-    align-content: center;
+  align-content: center;
 }
