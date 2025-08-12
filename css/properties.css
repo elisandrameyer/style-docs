@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #9b7c8f;
-  color: #ebecf1;
+  color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
   height: auto;
   padding-left: 4rem;
@@ -24,7 +24,7 @@ body {
 }
 
 .header-items a {
-  color: #ebecf1;
+  color: #fff;
   text-decoration: none;
   transition: color 100ms;
 }
@@ -58,25 +58,47 @@ body {
   margin-left: 3rem;
 }
 
+
 .content .summary {
   box-sizing: border-box;
   width: 20%;
   float: right;
   position: fixed;
   right: 0;
-  background-color: #addcc173;
+  background-color: #9b7c8f;
   border-radius: 8px;
   padding: 20px;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-right: 20px;
 }
 
+.content .summary a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
 .property {
-  background-color: #addcc173;
   border-radius: 8px;
-  padding: 20px;
   color: #000000;
+}
+
+.display-values {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.display-values div{
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  /* width: 150px; */
+  flex-grow: 3;
 }
 
 .lista-display-exemplo li {

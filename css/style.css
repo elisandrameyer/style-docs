@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #9b7c8f;
-  color: #ebecf1;
+  color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
   height: auto;
   padding-left: 4rem;
@@ -24,7 +24,7 @@ body {
 }
 
 .header-items a {
-  color: #ebecf1;
+  color: #fff;
   text-decoration: none;
   transition: color 100ms;
 }

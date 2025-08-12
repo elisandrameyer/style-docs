@@ -41,23 +41,14 @@
 
     <div class="content">
       <div class="summary">
-        <h3>Sumário</h3>
         <a href="#display">Display</a>
+        <a href="">Position</a>
       </div>
 
       <div class="properties">
         <div class="property">
           <h2 id="display" class="property-title">Display</h2>
-          <p class="property-description">
-            A propriedade display é uma das mais fundamentais no CSS. Ela define
-            como um elemento HTML é exibido na página, controlando o tipo de
-            "caixa" de renderização que ele gera. Isso impacta diretamente como
-            o elemento se comporta no fluxo do documento e como ele interage com
-            outros elementos ao seu redor. Entender display é crucial para
-            construir layouts e organizar o conteúdo de forma eficaz.
-          </p>
 
-          <h3 class="property-subtitle">O que faz</h3>
           <p>
             Controla o tipo de caixa de renderização de um elemento,
             determinando seu fluxo, alinhamento, e como ele ocupa espaço no
@@ -73,52 +64,58 @@
             A propriedade display aceita uma ampla gama de valores, mas os mais
             utilizados e essenciais para a maioria dos layouts são:
           </p>
-          <ul>
-            <li>
-              block: O elemento se comporta como um bloco. Ele ocupa toda a
-              largura disponível por padrão e sempre começa em uma nova linha.
-              Exemplos de elementos HTML que são block por padrão incluem div,
-              p, h1 a h6, ul, li.
-            </li>
-            <li>
-              inline: O elemento se comporta como um elemento em linha. Ele
-              ocupa apenas o espaço necessário para seu conteúdo e não quebra a
-              linha, permitindo que outros elementos inline ou inline-block
-              fiquem ao seu lado. Exemplos de elementos HTML que são inline por
-              padrão incluem span, a, strong, em, img. Importante: Você não pode
+          <div class="display-values">
+            <div>
+              <h3>Block</h3>
+              O elemento se comporta como um bloco. Ele ocupa toda a largura
+              disponível por padrão e sempre começa em uma nova linha. Exemplos
+              de elementos HTML que são block por padrão incluem div, p, h1 a
+              h6, ul, li.
+            </div>
+            <div>
+              <h3>Inline</h3>
+              O elemento se comporta como um elemento em linha. Ele ocupa apenas
+              o espaço necessário para seu conteúdo e não quebra a linha,
+              permitindo que outros elementos inline ou inline-block fiquem ao
+              seu lado. Exemplos de elementos HTML que são inline por padrão
+              incluem span, a, strong, em, img. Importante: Você não pode
               definir width, height, margin-top, margin-bottom ou padding-top,
               padding-bottom para elementos inline.
-            </li>
-            <li>
+            </div>
+            <div>
+              <h3>Inline-block</h3>
               inline-block: Este valor é uma combinação dos dois. O elemento se
               comporta como inline no fluxo (fica lado a lado com outros
               elementos), mas você pode definir width, height, margin e padding
               (incluindo os verticais) como faria com um elemento block. É
               extremamente útil para alinhar blocos de conteúdo horizontalmente.
-            </li>
-            <li>
-              flex: Transforma o elemento em um contêiner flexível (flex
+            </div>
+            <div>
+              <h3>Flex</h3>
+              Transforma o elemento em um contêiner flexível (flex
               container). Seus filhos diretos se tornam itens flexíveis (flex
               items) e podem ser organizados de forma flexível usando as
               propriedades do Flexbox (como justify-content, align-items,
               flex-direction). Ideal para layouts unidimensionais (linha ou
               coluna).
-            </li>
-            <li>
-              grid: Transforma o elemento em um contêiner de grade (grid
-              container). Seus filhos diretos se tornam itens de grade (grid
-              items) e podem ser organizados em um layout complexo de duas
-              dimensões (linhas e colunas) usando as propriedades do CSS Grid
-              (como grid-template-columns, grid-template-rows, gap).
-            </li>
-            <li>
-              none: O elemento e todos os seus filhos são completamente
+            </div>
+            <div>
+              <h3>Grid</h3>
+              Transforma o elemento em um contêiner de grade (grid container).
+              Seus filhos diretos se tornam itens de grade (grid items) e podem
+              ser organizados em um layout complexo de duas dimensões (linhas e
+              colunas) usando as propriedades do CSS Grid (como
+              grid-template-columns, grid-template-rows, gap).
+            </div>
+            <div>
+              <h3>None</h3>
+              O elemento e todos os seus filhos são completamente
               removidos do fluxo do documento, como se nunca tivessem existido.
               Ele não ocupa nenhum espaço na página e não é visível. Diferente
               de visibility: hidden; que oculta o elemento mas mantém seu
               espaço.
-            </li>
-          </ul>
+            </div>
+          </div>
 
           <h3>Cenário de Uso</h3>
           <p>
