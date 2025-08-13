@@ -58,7 +58,6 @@ body {
   margin-left: 3rem;
 }
 
-
 .content .summary {
   box-sizing: border-box;
   width: 20%;
@@ -93,11 +92,17 @@ body {
   flex-wrap: wrap;
 }
 
-.display-values div{
-  padding: 0.5rem;
+.display-values h3 {
+  color: #9b7c8f;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.display-values .display-value {
+  padding: 1rem;
   background-color: #f0f0f0;
   border-radius: 4px;
-  /* width: 150px; */
+  text-align: justify;
   flex-grow: 3;
 }
 
@@ -115,9 +120,46 @@ body {
   border: 1px solid #b3e5fc;
 }
 
-.container .div{
-    background-color: #e0f2f7; /* Um azul clarinho para visualização */
-    padding: 20px;
-    border: 1px solid #b3e5fc;
-    flex: 1; /* Faz com que as divs ocupem o mesmo espaço */
+.container .div {
+  background-color: #e0f2f7; /* Um azul clarinho para visualização */
+  padding: 20px;
+  border: 1px solid #b3e5fc;
+  flex: 1; /* Faz com que as divs ocupem o mesmo espaço */
+}
+
+.example-label {
+  font-weight: bold;
+  color: #9b7c8f;
+}
+
+/* .code-example {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  overflow-x: auto;
+} */
+
+.example-block {
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+.example-block .block-one {
+  background-color: #8c654f;
+}
+
+.example-block .block-two {
+  background-color: #bfa18f;
+}
+
+.example-block .block-three {
+  background-color: #403631;
+}
+
+.destaque {
+  display: inline; /* AQUI! Esta linha muda o comportamento do div */
+  background-color: lightblue;
+  padding: 2px;
 }

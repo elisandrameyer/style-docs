@@ -10,14 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-    </script>
+    /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark-reasonable.min.css" integrity="sha512-RwXJS3k4Z0IK6TGoL3pgQlA9g2THFhKL7z9TYWdAI8u6xK0AUuMWieJuWgTRayywC9A94ifUj1RzjDa1NIlUIg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script>
+      hljs.highlightAll(); -->
+    <!-- </script> -->
 
     <title>StyleDocs</title>
   </head>
@@ -65,24 +64,68 @@
             utilizados e essenciais para a maioria dos layouts são:
           </p>
           <div class="display-values">
-            <div>
+            <div class="display-value">
               <h3>Block</h3>
-              O elemento se comporta como um bloco. Ele ocupa toda a largura
-              disponível por padrão e sempre começa em uma nova linha. Exemplos
-              de elementos HTML que são block por padrão incluem div, p, h1 a
-              h6, ul, li.
+              <p>
+                O elemento se comporta como um bloco. Ele ocupa toda a largura
+                disponível por padrão e sempre começa em uma nova linha.
+                Exemplos de elementos HTML que são block por padrão incluem div,
+                p, h1 a h6, ul, li.
+              </p>
+              <p>
+                Imagine que você está organizando uma fila de pessoas. O
+                display: block é como se cada pessoa na fila fosse um "bloco"
+                grande. Não importa se a pessoa é alta ou baixa, ela ocupa todo
+                o espaço da linha, de uma ponta à outra. E, o mais importante,
+                cada pessoa <b>quebra a fila</b>. A próxima pessoa sempre vai
+                para a próxima linha, logo abaixo.
+              </p>
+
+              <span class="example-label">Exemplo</span>
+              <div class="example-block">
+                <div class="block-one">Bloco 1</div>
+                <div class="block-two">Bloco 2</div>
+                <div class="block-three">Bloco 3</div>
+              </div>
             </div>
-            <div>
+            <div class="display-value">
               <h3>Inline</h3>
-              O elemento se comporta como um elemento em linha. Ele ocupa apenas
-              o espaço necessário para seu conteúdo e não quebra a linha,
-              permitindo que outros elementos inline ou inline-block fiquem ao
-              seu lado. Exemplos de elementos HTML que são inline por padrão
-              incluem span, a, strong, em, img. Importante: Você não pode
-              definir width, height, margin-top, margin-bottom ou padding-top,
-              padding-bottom para elementos inline.
+              <p>
+                O elemento se comporta como um elemento em linha. Ele ocupa
+                apenas o espaço necessário para seu conteúdo e não quebra a
+                linha, permitindo que outros elementos inline ou inline-block
+                fiquem ao seu lado. Exemplos de elementos HTML que são inline
+                por padrão incluem span, a, strong, em, img. Importante: Você
+                não pode definir width, height, margin-top, margin-bottom ou
+                padding-top, padding-bottom para elementos inline.
+              </p>
+              <p>
+                <b>Como Livros em Uma Prateleira:</b> Pense em cada livro como
+                um elemento inline. Eles se alinham um ao lado do outro: Você
+                coloca um livro, depois o próximo logo ao lado, e assim por
+                diante. Eles preenchem a prateleira da esquerda para a direita.
+              </p>
+              <p>
+                <b>O tamanho é o que o livro tem:</b> Um livro pequeno ocupa pouco
+                espaço, um livro grande ocupa mais. Você não consegue "estender"
+                o livro para ocupar todo o comprimento da prateleira. A largura
+                dele é fixa, é a largura da capa.
+              </p>
+              <p>
+                <b>Não quebram a linha:</b> Os livros só vão para a prateleira de baixo
+                quando a de cima está completamente cheia.
+              </p>
+
+              <span class="example-label">Exemplo</span>
+
+              <p>
+                Esta é uma frase com alguns
+                <div class="destaque">divs estilizados</div>
+                para se comportarem como
+                <div class="destaque">elementos inline</div>.
+              </p>
             </div>
-            <div>
+            <div class="display-value">
               <h3>Inline-block</h3>
               inline-block: Este valor é uma combinação dos dois. O elemento se
               comporta como inline no fluxo (fica lado a lado com outros
@@ -90,16 +133,15 @@
               (incluindo os verticais) como faria com um elemento block. É
               extremamente útil para alinhar blocos de conteúdo horizontalmente.
             </div>
-            <div>
+            <div class="display-value">
               <h3>Flex</h3>
-              Transforma o elemento em um contêiner flexível (flex
-              container). Seus filhos diretos se tornam itens flexíveis (flex
-              items) e podem ser organizados de forma flexível usando as
-              propriedades do Flexbox (como justify-content, align-items,
-              flex-direction). Ideal para layouts unidimensionais (linha ou
-              coluna).
+              Transforma o elemento em um contêiner flexível (flex container).
+              Seus filhos diretos se tornam itens flexíveis (flex items) e podem
+              ser organizados de forma flexível usando as propriedades do
+              Flexbox (como justify-content, align-items, flex-direction). Ideal
+              para layouts unidimensionais (linha ou coluna).
             </div>
-            <div>
+            <div class="display-value">
               <h3>Grid</h3>
               Transforma o elemento em um contêiner de grade (grid container).
               Seus filhos diretos se tornam itens de grade (grid items) e podem
@@ -107,13 +149,12 @@
               colunas) usando as propriedades do CSS Grid (como
               grid-template-columns, grid-template-rows, gap).
             </div>
-            <div>
+            <div class="display-value">
               <h3>None</h3>
-              O elemento e todos os seus filhos são completamente
-              removidos do fluxo do documento, como se nunca tivessem existido.
-              Ele não ocupa nenhum espaço na página e não é visível. Diferente
-              de visibility: hidden; que oculta o elemento mas mantém seu
-              espaço.
+              O elemento e todos os seus filhos são completamente removidos do
+              fluxo do documento, como se nunca tivessem existido. Ele não ocupa
+              nenhum espaço na página e não é visível. Diferente de visibility:
+              hidden; que oculta o elemento mas mantém seu espaço.
             </div>
           </div>
 
